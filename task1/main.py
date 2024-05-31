@@ -3,8 +3,8 @@ import json
 import sys
 # task1
 
-n = 5
-m = -4
+n = sys.argv[1]
+m = sys.argv[2]
 if n < 1:
     print('numbers from 1 to n means n is greater than 1, so.. enter positive n please')
 else:
