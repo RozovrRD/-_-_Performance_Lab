@@ -15,9 +15,9 @@ with open(path2, "r", encoding='utf-8') as file2:
 values = json.loads(info1)
 tests = json.loads(info2)
 
-for item in tests:
+for item in tests['tests']:
     item_id = item['id']
-    for val in values:
+    for val in values['values']:
         if val['id'] == item_id:
             item['value'] = val['value']
             break
